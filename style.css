@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-weight: 300;
+}
+
+/* bagian navbar */
+nav{
+    display: flex;
+    background-color:#fffdf6;
+    color: #494949 ;
+    justify-content: space-around;
+    padding: 20px 0;
+    /* height: 50px;
+    align-items: center; */
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: #494949;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover{
+    opacity: 70%;
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #494949;
+    border-radius: 3px;
+
+}
+
+
+
+/* Responsive breakpoint navbar */
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 30%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    .menu-toggle{
+        display: flex;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .banner-image{
+        height:200px;
+    }
+}
+
+
+
+/* bagian banner image */
+.banner-image{
+    
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.123)) ,url(./img/image.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 800;
+    color: white;
+}
+
+.container h1 span{
+    color:#fffdf6;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+    font-size: 64px;
+    padding: 8px;
+}
+
+.tengah{
+    color: #fffdf6 ;
+    font-weight: 400;
+}
+
+/* bagian what can we give */
+.judul{
+    margin: 16px;
+}
+.judul h1{
+    text-align: center;
+    color:  #494949;
+}
+
+.whatcanweGive{
+    margin: 24px;
+}
+
+.whatcanweGive hr{
+    width: 64px;
+    background-color: #ece8d9;
+    margin: 0 auto;
+    height: 4px;
+    border: none;
+}
+
+/* bagian isi what can we give */
+
+.kotakParent{
+    display: flex;
+    height: 300px;
+    margin: 24px;
+    /* border: 2px solid; */
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:768px){
+    .kotakParent{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}
+
+.kotakChild{
+    width: 400px;
+    height: 250px;
+    margin: 16px;
+    /* border: 2px solid; */
+}
+
+.kotakIsi h2{
+    text-align: center;
+    color: #494949;
+}
+
+.kotakIsi p{
+    margin-top: 16px;
+    color: #494949;
+    text-align: center;
+}
+
+.kotakIsi img{
+    margin: 16px;
+    display: block;
+    width: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* bagian about us */
+.parentAboutUs{
+    margin-top: 4px;
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+    /* border: 2px solid; */
+    height: 500px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width:768px){
+    .childAboutUs1{
+        display: none;
+    }
+}
+
+.childAboutUs1{
+    background-color: #b6701e;
+    flex: 1;
+}
+
+.childAboutUs1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.childAboutUs2{
+    background-color: #fffdf6;
+    flex: 1;
+}
+
+.childIsi2 h1{
+    color: #494949;
+    margin: 12px;
+
+}
+
+.childIsi2 hr{
+    width: 64px;
+    background-color: #494949;
+    margin: 12px;
+    margin-left: 12px;
+    height: 4px;
+    border: none;
+}
+
+.childIsi2 p{
+    color: #494949;
+    margin: 16px;
+}
+
+
+/* bagian projects */
+.judulProjects{
+    margin: 24px;
+}
+.judulProjects h1{
+    margin: 12px;
+    text-align: center;
+    color:  #494949;
+}
+
+.judulProjects hr{
+    width: 64px;
+    background-color: #ece8d9;
+    margin: 0 auto;
+    height: 4px;
+    border: none;
+}
+
+
+/* bagian carousel */
+
+.containerCarousel{
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .containerCarousel{
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .containerCarousel{
+        max-width: 500px;
+    }
+}
+
+.carouselItem{
+    display: none;
+}
+
+.carouselItem img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.textbox{
+    background-color: #fffdf6;
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 8px;
+}
+
+
+.textbox hr{
+    width: 64px;
+    background-color: #ece8d9;
+    margin-left: 12px;
+    height: 4px;
+    border: none;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+.judulForm{
+    margin: 24px;
+}
+.judulItem h1{
+    margin: 12px;
+    text-align: center;
+    color:  #494949;
+}
+
+.judulItem hr{
+    width: 64px;
+    background-color: #ece8d9;
+    margin: 0 auto;
+    height: 4px;
+    border: none;
+}
+
+
+  /* form */
+
+  .formPertama{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      max-width: 800px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 36px;
+      /* border: 2px solid; */
+  }
+  .textField {
+    border: 2px solid  rgba(73,73,73,0.5);
+    border-radius: 4px;
+    height: 30px;
+    width: 45%;
+    margin: 8px;
+    padding: 4px;
+  }
+
+  .textField:focus{
+    outline: none !important;
+    border: none;
+    box-shadow: 1px 1px 2px 3px rgba(73,73,73, 0.6);
+  }
+
+
+  .formKedua{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 800px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
+      /* border: 2px solid; */
+
+  }
+
+
+  textarea{
+    width: 90%;
+    border: 2px solid  rgba(73,73,73,0.5);
+    border-radius: 4px;
+    margin-left: 12px;
+  }
+
+  textArea:focus{
+    outline: none !important;
+    border: none;
+    box-shadow: 1px 1px 2px 3px rgba(73,73,73, 0.6);
+  }
+
+  .formKedua button{
+      text-align: center;
+      padding: 8px 4px;
+      margin-left: 12px;
+      margin-top: 8px;
+      width: 120px;
+      height: 40px;
+      background-color: #faf6e9 ;
+      color: #494949;
+      text-decoration: none;
+      border-radius: 4px;
+      /* transition: 1s ease; */
+      border: none;
+  }
+
+.formKedua button:hover{
+    
+    background-color: white;
+    border-color: #ece8d9 !important;
+    border: 2px solid;
+    
+}
+
+footer{
+    margin-top: 24px;
+    display: flex;
+    background-color: #ece8d9;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}

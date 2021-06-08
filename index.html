@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>ArcInter</title>
+</head>
+<body>
+
+    <!-- bagian navbar -->
+    <header>
+        <nav>
+            <div class = "logo">
+                <h4>ArcInter</h4>
+            </div>
+
+            <ul>
+                <li> <a href="">About Us</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick = "changeMenuToggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </nav>
+    </header>
+    <!-- bagian navbar -->
+
+    <!-- bagian banner -->
+    <div class="banner-image">
+        <div class="container ">
+            <h1><span>ArcInter</span></h1>
+            <span class = "tengah">WE TAKE YOU TO THE ANOTHER LEVEL</span>
+        </div>
+    </div>
+    <!-- bagian banner -->
+
+    <!-- bagian what can we give -->
+    <div class="whatcanweGive">
+        <div class="judul">
+            <h1>What Can We Give</h1>
+        </div>
+        <hr>
+    </div>
+
+    <div class="kotakParent">
+        <div class = "kotakChild kotakIsi">
+            <img src="img/handshake.png" alt="handshake-icon" class="image1"/>
+            <h2>Pharetra</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in arcu mattis, varius tortor ac, venenatis elit. 
+                Phasellus mi mauris, posuere pharetra diam quis, sodales ultricies erat</p>
+        </div>
+        <div class = "kotakChild kotakIsi">
+            <img src="img/home.png" alt="home-icon" class="image2"/>
+            <h2>Phasellus</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in arcu mattis, varius tortor ac, venenatis elit. 
+                Phasellus mi mauris, posuere pharetra diam quis, sodales ultricies erat</p>
+        </div>
+        <div class = "kotakChild kotakIsi">
+            <img src="img/armchair.png" alt="orangsantuy-icon" class="image3"/>
+            <h2>Venenatis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in arcu mattis, varius tortor ac, venenatis elit. 
+                Phasellus mi mauris, posuere pharetra diam quis, sodales ultricies erat</p>
+        </div>
+    </div>
+
+    <!-- bagian about us -->
+    <div class= "parentAboutUs">
+        <div class="childAboutUs1 childIsi1">
+            <img src="img/orang-ngobrol.jpg" alt="orang-ngobrol"/>
+        </div>
+        <div class="childAboutUs2 childIsi2">
+            <h1>About us</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis nibh est, at gravida velit hendrerit sed. 
+                Quisque auctor ac lacus nec dignissim. Phasellus scelerisque lobortis metus quis feugiat. 
+                Sed semper enim vitae pharetra molestie. Ut molestie varius nisi, ut vestibulum lectus ullamcorper nec. 
+                Suspendisse non nulla arcu. In dictum, erat a finibus iaculis, ante libero maximus dui, quis semper augue lectus eget ligula. 
+                Phasellus fermentum non erat eu consequat.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- bagian projects -->
+    <div class="judulProjects">
+        <h1>Projects</h1>
+        <hr>
+    </div>
+
+    <!-- projects carousel -->
+    <div class="containerCarousel">
+        <div class="carouselItem fade">
+            <img src="img/dapur.jpg" alt="dapur">
+            <div class="textbox">
+                <h3>Morbi Mattis</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="carouselItem fade">
+            <img src="img/ruangkeluarga.jpg" alt="ruangkeluarga">
+            <div class="textbox">
+                <h3>Quis Feugiat</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="carouselItem fade">
+            <img src="img/kamartidur.jpg" alt="kamartidur">
+            <div class="textbox">
+                <h3>Enim Vitae</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    
+    <!-- title contact us -->
+    <div class="judulForm">
+        <div class="judulItem">
+            <h1>Get in Touch</h1>
+            <hr>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div class="formPertama">
+        <input type="text" class="textField" name="name" placeholder="Name"/>
+        <input type="text" class="textField" name="email" placeholder="Email">
+    </div>
+
+    <div class="formKedua">
+        <textarea name="message" placeholder="Enter your message" rows="4" cols="10"></textarea>
+        <button type="button">SUBMIT</button>
+    </div>
+    
+    <!-- bagian footer -->
+    <footer>
+        <p>&copy; Created by Gifino Thoriq S</p>
+    </footer>
+
+    <script type = "text/javascript" src="script.js"></script>
+</body>
+</html>
