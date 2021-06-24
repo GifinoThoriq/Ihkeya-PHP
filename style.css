@@ -134,11 +134,11 @@ nav ul li a:hover{
 }
 
 .whatcanweGive hr{
-    width: 64px;
-    background-color: #ece8d9;
+    width: 200px;
+    background-color:#A8A78D;
     margin: 0 auto;
     height: 4px;
-    border: none;
+    border: 25px;
 }
 
 /* bagian isi what can we give */
@@ -203,7 +203,7 @@ nav ul li a:hover{
 }
 
 .childAboutUs1{
-    background-color: #b6701e;
+    background-color: #A8A78D;
     flex: 1;
 }
 
@@ -214,7 +214,7 @@ nav ul li a:hover{
 }
 
 .childAboutUs2{
-    background-color: #fffdf6;
+    background-color: white;
     flex: 1;
 }
 
@@ -225,8 +225,8 @@ nav ul li a:hover{
 }
 
 .childIsi2 hr{
-    width: 64px;
-    background-color: #494949;
+    width: 165px;
+    background-color: #A8A78D;
     margin: 12px;
     margin-left: 12px;
     height: 4px;
@@ -376,8 +376,8 @@ background-color: rgba(0,0,0,0.8);
 }
 
 .judulItem hr{
-    width: 64px;
-    background-color: #ece8d9;
+    width: 100px;
+    background-color: #A8A78D;
     margin: 0 auto;
     height: 4px;
     border: none;
@@ -390,11 +390,12 @@ background-color: rgba(0,0,0,0.8);
       display: flex;
       justify-content: space-around;
       flex-direction: row;
-      max-width: 800px;
+      max-width: 500px;
       height: auto;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 450px;
+      margin-right: 450;
       margin-top: 36px;
+      align-items: center;
       /* border: 2px solid; */
   }
   .textField {
@@ -416,11 +417,11 @@ background-color: rgba(0,0,0,0.8);
   .formKedua{
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      max-width: 800px;
+      align-items: center;
+      max-width: 500px;
       height: auto;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 450px;
+      margin-right: 450px;
       margin-top: 8px;
       /* border: 2px solid; */
 
@@ -432,6 +433,10 @@ background-color: rgba(0,0,0,0.8);
     border: 2px solid  rgba(73,73,73,0.5);
     border-radius: 4px;
     margin-left: 12px;
+    height: 70px;
+    width: 95%;
+    margin: 8px;
+    padding: 4px;
   }
 
   textArea:focus{
@@ -442,6 +447,7 @@ background-color: rgba(0,0,0,0.8);
 
   .formKedua button{
       text-align: center;
+      align-content: flex-start;
       padding: 8px 4px;
       margin-left: 12px;
       margin-top: 8px;
@@ -458,7 +464,7 @@ background-color: rgba(0,0,0,0.8);
 .formKedua button:hover{
     
     background-color: white;
-    border-color: #ece8d9 !important;
+    border-color: #A8A78D !important;
     border: 2px solid;
     
 }
@@ -466,7 +472,7 @@ background-color: rgba(0,0,0,0.8);
 footer{
     margin-top: 24px;
     display: flex;
-    background-color: #ece8d9;
+    background-color: #A8A78D;
     height: 50px;
     align-items: center;
     justify-content: center;
