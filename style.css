@@ -14,12 +14,11 @@ p{
 /* bagian navbar */
 nav{
     display: flex;
-    background-color:#fffdf6;
+    background-color:#EFEFEF;
     color: #494949 ;
-    justify-content: space-around;
-    padding: 20px 0;
-    /* height: 50px;
-    align-items: center; */
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
 }
 
 nav ul{
@@ -27,6 +26,7 @@ nav ul{
     list-style: none;
     width: 20%;
     justify-content: space-between;
+    margin-right: 32px;
 }
 
 nav ul li a{
@@ -41,6 +41,14 @@ nav ul li a:hover{
 
 .logo{
     justify-content: flex-start;
+}
+
+.logo img
+{
+    height: 70px;
+    width: 100px;
+    object-fit: cover;
+    margin-left: 32px;
 }
 
 /* Hamburger Menu */
@@ -105,19 +113,38 @@ nav ul li a:hover{
     text-align: center;
     font-weight: 800;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.container h1 span{
+.container h1{
     color:#fffdf6;
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 4px;
     font-size: 64px;
     padding: 8px;
+    margin-bottom: 4px;
 }
 
-.tengah{
-    color: #fffdf6 ;
-    font-weight: 400;
+.container button{
+    width: 150px;
+    height: 40px;
+    padding: 4px;
+    align-self: center;
+    background-color: #185ADB;
+    border: none;
+    color: #EFEFEF;
+    border-radius: 20px;
+    margin-top: 8px;
+    transition: 1s;
+}
+
+.container button:hover{
+    filter: brightness(1.50);
+}
+
+.container span{
+    margin-bottom: 4px;
 }
 
 /* bagian what can we give */
@@ -135,7 +162,7 @@ nav ul li a:hover{
 
 .whatcanweGive hr{
     width: 200px;
-    background-color:#A8A78D;
+    background-color:#185ADB;
     margin: 0 auto;
     height: 4px;
     border: 25px;
@@ -203,7 +230,7 @@ nav ul li a:hover{
 }
 
 .childAboutUs1{
-    background-color: #A8A78D;
+    background-color: #185ADB;
     flex: 1;
 }
 
@@ -214,7 +241,7 @@ nav ul li a:hover{
 }
 
 .childAboutUs2{
-    background-color: white;
+    background-color:#EFEFEF;
     flex: 1;
 }
 
@@ -226,7 +253,7 @@ nav ul li a:hover{
 
 .childIsi2 hr{
     width: 165px;
-    background-color: #A8A78D;
+    background-color: #185ADB;
     margin: 12px;
     margin-left: 12px;
     height: 4px;
@@ -251,7 +278,7 @@ nav ul li a:hover{
 
 .judulProjects hr{
     width: 64px;
-    background-color:#A8A78D;
+    background-color:#185ADB;
     margin: 0 auto;
     height: 4px;
     border: none;
@@ -289,7 +316,7 @@ nav ul li a:hover{
 }
 
 .textbox{
-    background-color: #fffdf6;
+    background-color: #FFC947;
     width: 40%;
     height: 15%;
     position: absolute;
@@ -301,7 +328,7 @@ nav ul li a:hover{
 
 .textbox hr{
     width: 64px;
-    background-color: #ece8d9;
+    background-color: #FFC947;
     margin-left: 12px;
     height: 4px;
     border: none;
@@ -344,7 +371,7 @@ background-color: rgba(0,0,0,0.8);
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #185ADB;
   }
   
   /* Fading animation */
@@ -377,7 +404,7 @@ background-color: rgba(0,0,0,0.8);
 
 .judulItem hr{
     width: 100px;
-    background-color: #A8A78D;
+    background-color: #185ADB;
     margin: 0 auto;
     height: 4px;
     border: none;
@@ -453,40 +480,28 @@ background-color: rgba(0,0,0,0.8);
       margin-top: 8px;
       width: 120px;
       height: 40px;
-      background-color: #faf6e9 ;
-      color: #494949;
+      background-color: #185ADB ;
+      color: white;
       text-decoration: none;
       border-radius: 4px;
-      /* transition: 1s ease; */
+      transition: 1s;
       border: none;
   }
 
 .formKedua button:hover{
     
     background-color: white;
-    border-color: #A8A78D !important;
+    border-color: #185ADB !important;
     border: 2px solid;
-    
+    color: #494949;
 }
 
 footer{
     margin-top: 24px;
     display: flex;
-    background-color: #A8A78D;
+    background-color: #FFC947;
     height: 50px;
     align-items: center;
     justify-content: center;
-}
-
-/* login */
-
-.login{
-    display:flex;
-    background-color: #A8A78D;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-    }
+    color: white;
 }
