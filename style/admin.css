@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+
+
+th{
+    padding: 4px;
+}
+
+td{
+    padding: 4px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+table{
+    width: 90%;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bagian-atas,.bagian-bawah{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 12px;
+}
